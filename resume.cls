@@ -97,7 +97,7 @@
   \sectionskip
   \MakeUppercase{\bf #1} % Section title
   \sectionlineskip
-  \hrule width 548 %Horizontal line
+  \hrule width 580 %Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0.85em} % Margin within the section
   }
