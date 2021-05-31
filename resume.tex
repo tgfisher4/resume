@@ -22,7 +22,7 @@
 
 \documentclass[10pt]{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Document margins
+\usepackage[left=0.25in,top=0.25in,right=0.25in,bottom=0.25in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
@@ -39,7 +39,7 @@
 \begin{rSection}{Education}
 
 \\{\bf University of Notre Dame (Notre Dame, IN) } \hfill { \em May 2022 } 
-\\ Bachelor of Science, Computer Science and Honors Mathematics\hfill { GPA: 3.98 }
+\\ Bachelor of Science, Computer Science and Honors Mathematics\hfill { GPA: 3.99 }
 
 
 \end{rSection}
@@ -52,11 +52,18 @@
 
 \begin{rSection}{ Software Experience }
 
+\begin{rSubsection}{ Site Reliability Engineer Intern - Reconstruct }{ Jan 2021 - May 2021 }{}{}
+\item Analyzed potential advantages and risks associated with using AWS EC2 reserved and spot instances based on historical usage data. Presentation prompted plans for system re-architecture to support using spot instances.
+\item Built a Gitlab CI/CD Pipeline which tests, packages, and deploys AWS Lambda function code (Bash, Docker, Gitlab)
+\item Automated generation of a monthly cloud billing spreadsheet via AWS Lambda (Python, AWS, Google Sheets)
+\item Automated submission of EC2 vCPU Quota increase requests as needed via AWS Lambda (Python, AWS, pytest)
+\end{rSubsection}
+
 \begin{rSubsection}{ Technology Development Program Intern - Optum }{ Jun 2020 - Aug 2020 }{}{}
 \item In team of 4 interns, built performance testing framework to load test REST services (Scala, Gatling, Maven)
 \item Containerized app components and deployed into on-premises Kubernetes cluster via Helm (Kubernetes, Helm)
 \item Automated creation of dashboard report to analyze results and drive development (InfluxDB, Grafana, Jenkins)
-\item Presented progress in biweekly ``Shark Tank" and final product to Chief Data Officer, Chief Information Officer
+%\item Presented progress in biweekly ``Shark Tank" and final product to Chief Data Officer, Chief Information Officer
 \end{rSubsection}
 
 \begin{rSubsection}{ Learning Management Systems Developer - Notre Dame Office of IT }{ Sep 2019 - Present }{}{}
@@ -68,14 +75,14 @@
 \begin{rSubsection}{ Computational Methods for Discovery Driven by Big Data REU }{ Jun 2019 - Aug 2019 }{}{}
 \item Implemented a novel redirected walking algorithm to allow efficient and natural virtual locomotion in complex physical environments. Processed data in Python; imported and used result in C\# algorithms for Unity
 \item Worked in the Illusioneering Lab at the University of Minnesota under the direction of Evan Suma Rosenberg
-\item Presented poster at the University of Minnesota's Summer Undergraduate Research Expo
+%\item Presented poster at the University of Minnesota's Summer Undergraduate Research Expo
 \item Completed ``Big Data Bootcamp" using materials from the Fall 2016 Data 8 course at UC Berkeley (Python)
 \end{rSubsection}
 
-\begin{rSubsection}{ 2019 Hesburgh Libraries Hackathon }{ Mar 2019 }{}{}
-\item Built a web app with 3 others in a 3-day hackathon to improve student life (JQuery, Bootstrap)
-\item Awarded Honorable Mention for Napingo, a platform via which users find and share nap spots around campus
-\end{rSubsection}
+%\begin{rSubsection}{ 2019 Hesburgh Libraries Hackathon }{ Mar 2019 }{}{}
+%\item Built a web app with 3 others in a 3-day hackathon to improve student life (JS, JQuery, Bootstrap)
+%\item Awarded Honorable Mention for Napingo, a platform via which users find and share nap spots around campus
+%\end{rSubsection}
 
 \begin{rSubsection}{ Modularization Project Lead - Robotic Football Club }{ Sep 2018 - Aug 2020 }{}{}
 \item Collaborated with fellow engineers to design, build, program, and repair more than a dozen robots to play football; robots are controlled by club members in a game very similar to American football
@@ -90,9 +97,9 @@
 
 \begin{rSection}{Other Experience}
 
-\begin{rSubsection}{ Honors Calculus I Grader and Tutor - Notre Dame Math Department }{ Aug 2020 - Present }{}{}
-\item Tutor in the ``math bunker," a student-run help room dedicated to proof-based math classes
-\item Grade weekly assignments for the Honors Calculus I course, a differential calculus class from first principles
+\begin{rSubsection}{ Math Grader and Math Bunker Head Tutor - Notre Dame Math Department }{ Aug 2020 - Present }{}{}
+\item Lead (and tutor in) the ``math bunker," a student-run help room dedicated to proof-based math classes
+\item Grade assignments for Honors Calculus classes, which build single- and multi-variable calculus from first principles
 \end{rSubsection}
 
 
@@ -109,7 +116,7 @@
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Service}
 \\ { Weekly Tutoring at St. Adalbert's Elementary School } \hfill { Sep 2018 - Present }
-\\ { Northside Ministries Food Pantry and Community Garden Volunteering (200 hours) } \hfill { Apr 2017 - Apr 2018}
+\\ { Northside Ministries Food Pantry and Community Garden Volunteering (200 hours) } \hfill { Apr 2017 - Apr 2018 }
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -119,8 +126,8 @@
 \begin{rSection}{Technical Skills}
 %\begin{tabular}{ @{} >{\bfseries}l @{\hspace{1ex}} ll }
 \begin{tabular}{ @{} @{\hspace{1ex}} ll }
-{\em Proficient}: Python, Java, LaTeX, Bash, JavaScript, C, PHP, SQL \\ %\ & {\em Basic}: C++, Clojure, Scala, Gatling, Arduino, MATLAB,  PHP, SQL, Unity \\
-{\em Basic}: C++, Clojure, Scala, Gatling, Docker, Kubernetes, Helm, Jenkins, Arduino, MATLAB, Verilog  \\
+{\em Proficient}: Python, Java, C, LaTeX, Bash, Docker, JavaScript, PHP, SQL \\ %\ & {\em Basic}: C++, Clojure, Scala, Gatling, Arduino, MATLAB,  PHP, SQL, Unity \\
+{\em Basic}: C++, AWS, Gitlab, Clojure, Scala, Gatling, Kubernetes, Helm, Jenkins, Arduino, MATLAB, Verilog  \\
 %Other \ & Latin, Cello \\
 
 \end{tabular}
@@ -131,6 +138,7 @@
 %    HONORS
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Honors}
+\\ { Upsilon Pi Epsilon Computing and Information Honor Society Member } \hfill { Inducted Mar 2021 }
 \\ { Tau Beta Pi Engineering Honor Society Member (Indiana Gamma Chapter) } \hfill { Inducted Nov 2020 }
 \\ { Honorable Mention - 2019 Hesburgh Libraries Hackathon } \hfill { Mar 2019 }
 \\ { Virginia A. Smith Highest Academic Award (Valedictorian Equivalent) } \hfill { May 2018 }
