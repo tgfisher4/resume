@@ -26,6 +26,8 @@
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
 
+\usepackage{bm}
+
 \pagestyle{empty} % Suppress page numbers
 
 %----------------------------------------------------------------------------------------
@@ -97,7 +99,7 @@
   \sectionskip
   \MakeUppercase{\bf #1} % Section title
   \sectionlineskip
-  \hrule width 580 %Horizontal line
+  \hrule width 555 %Horizontal line
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0.85em} % Margin within the section
   }
@@ -116,8 +118,8 @@
   \\
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.7em \vspace{-0.7em} % Compress items in list together for aesthetics
+  \begin{list}{$\bm \cdot $}{\leftmargin=0.75em} % \cdot used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.6em} % Compress items in list together for aesthetics
   }{
   \end{list}
   \vspace{-0.15em} % Some space after the list of bullet points
